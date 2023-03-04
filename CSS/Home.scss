@@ -1,0 +1,1140 @@
+:root {
+    --MainColor:  #0E3B43;
+}
+$SecondColor : #357266;
+$ThirdColor : #A3BBAD;
+$Transtion : 0.8s;
+$LargeFontSize : 40px ;
+$MeduimFontSize : $LargeFontSize - 10px;
+$SmallFontSize :  $MeduimFontSize - 10px;
+$MarginTop : 250px ;
+$ShadowColor : rgb(228, 228, 228) ;
+
+header{
+    display: grid;
+    grid-template-columns: 5% 12% 79%;
+    gap:2%;
+    padding: 0 2%;
+    align-items: center;
+    background-color:$SecondColor;
+    h1 {
+        color:var(--MainColor);
+    }
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+    ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns:repeat(7 ,auto) ;
+        justify-content: end;
+        align-items: center;
+        gap: 30px;
+        li {
+            a {
+                color: $ThirdColor;
+                transition: $Transtion;
+                font-size: $SmallFontSize + 5px;
+                text-decoration: none;
+                &:hover {
+                    color: var(--MainColor);
+                    transform: translateY(-10px);
+            }
+            }
+        }
+    }
+} 
+
+.Show{
+    display:none !important;
+}
+
+html{
+    scroll-behavior: smooth;
+    body{
+        text-align: center;
+        article{
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .Home{
+                position: relative;
+                background-image: url("../Images/Back_1.jpg");
+                background-repeat:no-repeat;
+                background-size: 100% 100%;
+                overflow: hidden;
+                .Open{
+                    transform: translateX(0%) !important;
+                }
+                #Control_Board {
+                    transform: translateX(100%);
+                    position: absolute;
+                    top:0% ;
+                    right: 0;
+                    width: 30%;
+                    height: 100%;
+                    background-color:var(--MainColor);
+                    display: grid;
+                    grid-template-rows: repeat(auto-fill,auto);
+                    gap: 10px;
+                    #BackGround-Colors{
+                        div {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill,auto);
+                            gap: 10px;
+                            justify-content: center;
+                            span {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 100%;
+                                background-color: black;
+                                padding: 0;
+                           }
+                        } 
+                    }
+                    #Open-Board {
+                        div {
+                            margin-right:100% ;
+                            div {
+                                padding: 5px;
+                                width: 20px;
+                                height: 20px;
+                                text-align: center;
+                                background-color: var(--MainColor);
+                                margin-right:50%;
+                            }
+                        }
+                    }
+                    > div {
+                        h1 {
+                            color: $SecondColor;
+                        }
+                        div {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill,auto);
+                            gap: 10px;
+                            justify-content: center;
+                            span {
+                                padding: 5px;
+                                font-size: $SmallFontSize;
+                                transition: $Transtion;
+                                &:hover {
+                                    color: $SecondColor;
+                                }
+                            }
+                            input {
+                                border-radius: 20px;
+                                border: none;
+                                font-size: $SmallFontSize;
+                                box-shadow: 5px 5px 5px $ShadowColor;
+                            }
+                            button {
+                                padding: 5px 20px;
+                                border: none;
+                                font-size: $SmallFontSize;
+                                border-radius:10px ;
+                                color: $SecondColor;
+                                transition: $Transtion;
+                                &:hover {
+                                    background-color: $SecondColor ;
+                                    color: $ThirdColor;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Container {
+                    height: 100vh;
+                    width: 100%; 
+                    div {
+                        margin-top: 20%;
+                        h1 {
+                            font-size: $LargeFontSize;
+                            color: black;
+                            span {
+                                color: var(--MainColor);
+                            }
+                        }
+                        p {
+                            font-size: $MeduimFontSize;
+                        }
+                    }
+
+                }
+            }
+            ////////////////////////////////////////////////
+            .Services{
+                margin-top:$MarginTop ;
+                position: relative;
+                padding: 20px;
+                overflow: hidden;
+                > h1 {
+                    font-size: $LargeFontSize + 5px ;
+                    padding: 10px 20px;
+                    border: 3px solid $SecondColor;
+                    width: fit-content;
+                    margin: 10px auto;
+                    color: var(--MainColor);
+                    transition: $Transtion;
+                    &:hover{
+                    background-color: $SecondColor; 
+                    border: 3px solid $SecondColor;
+                    }
+                }
+                .Container {
+                    width: 96%;
+                    display: grid;
+                    grid-template-columns:repeat(auto-fill ,minmax(250px, 1fr));
+                    gap: 20px;
+                    padding: 2%;
+                    align-items: center;
+                    div {
+                        padding: 20px;
+                        text-align: center;
+                        i {
+                            background-color:var(--MainColor) ;
+                            padding: 15px;
+                            border-radius: 100%;
+                            transition: $Transtion;
+                            color:$ThirdColor ;
+                            &:hover {
+                                background-color:$ThirdColor ;
+                                color:var(--MainColor) ;
+                            }
+                        }
+                        h1 {
+                            font-size: $MeduimFontSize;
+                            color:var(--MainColor);
+                        }
+                        p {
+                            font-size: $SmallFontSize;
+                            color: $SecondColor;
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            .Start_Working{
+                margin-top:$MarginTop ;
+                position: relative;
+                background-color:var(--MainColor);
+                padding: 20px;
+                overflow: hidden;
+                > h1 {
+                    font-size: $LargeFontSize + 5px ;
+                    padding: 10px 20px;
+                    border: 3px solid $SecondColor;
+                    width: fit-content;
+                    margin: 10px auto;
+                    color: $ThirdColor;
+                    transition: $Transtion;
+                    &:hover{
+                    background-color: $SecondColor; 
+                    border: 3px solid $ThirdColor;
+                    }
+                }
+                .Container {
+                width: 96%;
+                text-align: center;
+                form {
+                    padding: 20px;
+                    display: grid;
+                    grid-template-rows: auto;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    input {
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: $SmallFontSize;
+                        box-shadow: 5px 5px 5px $ShadowColor;
+                        }
+                    }
+                a {
+                    padding: 5px;
+                    display: block;
+                    font-size: $SmallFontSize;
+                    color: $ThirdColor;
+                    transition: $Transtion;
+                    &:hover {
+                        color: $SecondColor;
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            .Lists{
+                margin-top:$MarginTop ;
+                position: relative;
+                padding: 20px;
+                overflow: hidden;
+                > h1 {
+                    font-size: $LargeFontSize + 5px ;
+                    padding: 10px 20px;
+                    border: 3px solid $SecondColor;
+                    width: fit-content;
+                    margin: 10px auto;
+                    color:var(--MainColor)r;
+                    transition: $Transtion;
+                    &:hover{
+                    background-color: $SecondColor; 
+                    border: 3px solid $SecondColor;
+                        }
+                    }
+                .Container {
+                    padding: 20px;
+                    display: grid;
+                        grid-template-columns:repeat(auto-fill ,minmax(250px, 1fr));
+                        gap: 20px;
+                        div {
+                            position: relative;
+                            text-align: center;
+                            overflow: hidden;
+                            transition: $Transtion;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                transition: $Transtion;
+                                }
+                            span {
+                                position: absolute;
+                                bottom: 0%;
+                                width: 100%;
+                                right: -17%;
+                                background-color: $SecondColor;
+                                padding: 10px 50px;
+                                transition: $Transtion;
+                                font-size: $MeduimFontSize;
+                                color: $ThirdColor;
+                                }
+                            &:hover {
+                                img{
+                                    transform: scale(1.4 , 1.4) rotateZ(15deg);
+                                    }
+                                span {
+                                    background-color:var(--MainColor);
+                                }
+                            }
+                            }   
+                        }
+            }
+            ////////////////////////////////////////////////
+            .AboutUs{
+                margin-top:$MarginTop ;
+                position: relative;
+                background-color:var(--MainColor);
+                padding: 20px;
+                overflow: hidden;
+                > h1 {
+                    font-size: $LargeFontSize + 5px ;
+                    padding: 10px 20px;
+                    border: 3px solid $SecondColor;
+                    width: fit-content;
+                    margin: 10px auto;
+                    color: $ThirdColor;
+                    transition: $Transtion;
+                    &:hover{
+                    background-color: $SecondColor; 
+                    border: 3px solid $SecondColor;
+                        }
+                    }
+                .Container {
+                    padding: 20px;
+                    display: grid;
+                        grid-template-columns:repeat(auto-fill ,minmax(500px, 1fr));
+                        gap: 20px;
+                    > div {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 5px;
+                            height: 100%;
+                            background-color: $SecondColor;
+                        }
+                        > div {
+                            text-align: right !important;
+                            padding: 20px;
+                            box-shadow: 5px 5px 5px $ShadowColor;
+                            border-radius: 20px;
+                            width: 80%;
+                            margin-right:5%;
+                            margin-top: 30px;
+                            position: relative;
+                            > span {
+                                padding: 10px 20px;
+                                font-size: $MeduimFontSize;
+                                background-color: $SecondColor;
+                                border-radius: 10px;
+                                color:var(--MainColor);
+                            }
+                            > p {
+                                font-size: $MeduimFontSize;
+                                color: $ThirdColor;
+                            }
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                width: 26px;
+                                height: 10px;
+                                background-color:$SecondColor;
+                                top: 50%;
+                                right: -5%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            ////////////////////////////////////////////////
+            .Testimoniles{
+                margin-top:$MarginTop ;
+                position: relative;
+                padding: 20px;
+                overflow: hidden;
+                > h1 {
+                    font-size: $LargeFontSize + 5px ;
+                    padding: 10px 20px;
+                    border: 3px solid $SecondColor;
+                    width: fit-content;
+                    margin: 10px auto;
+                    color:var(--MainColor);
+                    transition: $Transtion;
+                    &:hover{
+                    background-color: $SecondColor; 
+                    border: 3px solid $ThirdColor;
+                        }
+                    }
+                .Container {
+                    padding: 20px;
+                    div {
+                        display: grid;
+                        grid-template-columns:repeat(auto-fill ,minmax(350px, 1fr));
+                        gap: 20px;
+                        div {
+                            padding: 20px;
+                            border-radius: 20px;
+                            box-shadow: 5px 5px 5px $ShadowColor;
+                            h2 {
+                                font-size: $SmallFontSize;
+                                color:var(--MainColor);
+                            }
+                            q {
+                                font-size: $SmallFontSize;
+                                color: $SecondColor;
+                            }
+                        }
+                    }
+                    form {
+                        padding: 30px;
+                        display: grid;
+                        grid-template-rows: auto;
+                        gap: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        label {
+                            font-size: $MeduimFontSize;
+                            color: $ThirdColor;
+                        }
+                        input {
+                            padding: 10px 20px;
+                            border-radius: 20px;
+                            border: none;
+                            font-size: $MeduimFontSize;
+                            box-shadow: 5px 5px 5px $ShadowColor;
+                            transition: $Transtion;
+                        }
+                        textarea {
+                            padding: 10px 20px;
+                            border-radius: 20px;
+                            border: none;
+                            font-size: $MeduimFontSize;
+                            box-shadow: 5px 5px 5px $ShadowColor;
+                                }
+                        input:last-of-type {
+                            &:hover {
+                                background-color:var(--MainColor) ;
+                                color: $ThirdColor;
+                            }
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            .Statistics{
+                position: relative;
+                background-color:var(--MainColor);
+                padding: 20px;
+                overflow: hidden;
+                .Container {
+                    display: grid;
+                    grid-template-columns:repeat(auto-fill ,minmax(250px, 1fr));
+                    gap: 20px;
+                    div{
+                        padding: 20px;
+                        i {
+                            padding: 15px;
+                            border-radius: 100%;
+                            transition: $Transtion;
+                            background-color:$ThirdColor ;
+                            color: $SecondColor ;
+                            &:hover {
+                                background-color:$SecondColor ;
+                                color:$ThirdColor ;
+                            }
+                        }
+                        h1 {
+                            font-size: $MeduimFontSize;
+                            color: $SecondColor;
+                        }
+                        p {
+                            font-size: $MeduimFontSize;
+                            color: $SecondColor;
+                        }
+                        a {
+                            padding: 5px;
+                            display: block;
+                            font-size: $SmallFontSize;
+                            color: $ThirdColor;
+                            transition: $Transtion;
+                            &:hover {
+                                color: $SecondColor;
+                            }
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            .ContactUs{
+                margin-top:$MarginTop ;
+                position: relative;
+                overflow: hidden;
+                > h1 {
+                    font-size: $LargeFontSize + 5px ;
+                    padding: 10px 20px;
+                    border: 3px solid $SecondColor;
+                    width: fit-content;
+                    margin: 10px auto;
+                    color:var(--MainColor);
+                    transition: $Transtion;
+                    &:hover{
+                    background-color: $SecondColor; 
+                    border: 3px solid $ThirdColor;
+                        }
+                    }
+                .Container {
+                    padding: 20px;
+                    display: grid;
+                    grid-template-columns:repeat(auto-fill ,minmax(500px, 1fr));
+                    gap: 20px;
+                    div {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        form {
+                            padding: 30px;
+                            display: grid;
+                            grid-template-rows: auto;
+                            gap: 20px;
+                            justify-content: center;
+                            align-items: center;
+                            label {
+                                font-size: $MeduimFontSize;
+                                color: $SecondColor;
+                            }
+                            input {
+                                padding: 10px 20px;
+                                border-radius: 20px;
+                                border: none;
+                                font-size: $MeduimFontSize;
+                                box-shadow: 5px 5px 5px $ShadowColor;
+                                transition: $Transtion;
+                            }
+                            textarea {
+                                padding: 10px 20px;
+                                border-radius: 20px;
+                                border: none;
+                                font-size: $MeduimFontSize;
+                                box-shadow: 5px 5px 5px $ShadowColor;
+                                    }
+                            input:last-of-type {
+                                &:hover {
+                                    background-color:var(--MainColor);
+                                    color: $ThirdColor;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            ////////////////////////////////////////////////
+            footer{
+                background-color:var(--MainColor);
+                overflow: hidden;
+                .Container {
+                    padding: 20px;
+                    display: grid;
+                    grid-template-rows:repeat(auto-fill ,auto);
+                    gap: 20px;
+                    div {   
+                        &:first-of-type {
+                            display: grid;
+                            grid-template-columns:repeat(auto-fill ,minmax(350px, 1fr));
+                            gap: 20px;
+                            div {
+                                padding: 20px;
+                                h1 {
+                                    font-size:$LargeFontSize;
+                                    color: $SecondColor;
+                                }
+                                img {
+                                    width: 50%;
+                                    margin: 10px auto;
+                                    border-radius: 100%;
+                                }
+                                h2 {
+                                    font-size:$MeduimFontSize;
+                                    color:$SecondColor;
+                                }
+                                ul {
+                                    list-style-type: none;
+                                    display: grid;
+                                    grid-template-rows:repeat(5 , auto);
+                                    gap: 20px;
+                                    li {
+                                        a {
+                                            text-decoration: none;
+                                            font-size: $MeduimFontSize;
+                                            line-height: 1.4;
+                                            transition: $Transtion;
+                                            color: $ThirdColor;
+                                            &:hover {
+                                                color: $SecondColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:last-of-type {
+                            direction: ltr;
+                            p , span {
+                                font-size: $SmallFontSize;
+                                display: inline;
+                                padding: 1px ;
+                            }
+                            p {
+                                color: $ThirdColor;
+                            }
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .The_List{
+                position: relative;
+                overflow: hidden;
+                .Container {
+                    display: grid;
+                    grid-template-columns:1fr;
+                    gap: 20px;
+                    .The_Head{
+                        padding: 20px;
+                        display: grid;
+                        grid-template-columns:repeat(auto-fill ,minmax(100px , auto));
+                        gap: 20px;
+                        text-align: center;
+                        align-items: center;
+                        background-color:var(--MainColor);
+                        span {
+                            font-size: $SmallFontSize;
+                            color: $ThirdColor;
+                        }
+                    }
+                    .The_Client{
+                        padding: 20px;
+                        display: grid;
+                        grid-template-columns:repeat(auto-fill ,minmax(100px , auto));
+                        gap: 20px;
+                        text-align: center;
+                        align-items: center;
+                        background-color:$SecondColor;
+                        span {
+                            font-size: $SmallFontSize;
+                            color: $ThirdColor;
+                            a {
+                                color: $ThirdColor;
+                                text-decoration: none;
+                                transition: $Transtion;
+                                &:hover {
+                                    color:var(--MainColor);
+                                }
+                            }
+                        }
+                        button {
+                            padding: 10px 20px;
+                            border-radius: 110px;
+                            border: none;
+                            font-size: $SmallFontSize;
+                            transition: $Transtion;
+                            &:hover {
+                                background-color: $SecondColor;
+                                color: $ThirdColor;
+                            }
+                        }
+                    }
+                    .The_Details{
+                        .The_HeadX{
+                            padding: 20px;
+                            display: grid;
+                            grid-template-columns:repeat(auto-fill ,minmax(100px , auto));
+                            gap: 20px;
+                            text-align: center;
+                            align-items: center;
+                            background-color:var(--MainColor);
+                            span {
+                                font-size: $SmallFontSize;
+                                color: $ThirdColor;
+                            }
+                        }
+                        .The_Detail{
+                            padding: 20px;
+                            display: grid;
+                            grid-template-columns:repeat(auto-fill ,minmax(100px , auto));
+                            gap: 20px;
+                            text-align: center;
+                            align-items: center;
+                            background-color:$SecondColor;
+                            span {
+                                font-size: $SmallFontSize;
+                                color: $ThirdColor;
+                                a {
+                                    color: $ThirdColor;
+                                    text-decoration: none;
+                                    transition: $Transtion;
+                                    &:hover {
+                                        color:var(--MainColor);
+                                    }
+                                }
+                            }
+                        }
+                        .Add_Size {
+                            text-align: center;
+                            align-items: center;
+                            padding: 20px;
+                            background-color:var(--MainColor);
+                            button{
+                                padding: 10px 20px;
+                                border-radius: 110px;
+                                border: none;
+                                font-size: $SmallFontSize;
+                                transition: $Transtion;
+                                &:hover {
+                                    background-color: var(--MainColor);
+                                    color: $ThirdColor;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Add_Client {
+                    text-align: center;
+                    align-items: center;
+                    padding: 20px;
+                    background-color:$ThirdColor;
+                    a {
+                        button{
+                            padding: 10px 20px;
+                            border-radius: 110px;
+                            border: none;
+                            font-size: $SmallFontSize;
+                            transition: $Transtion;
+                            &:hover {
+                                background-color: var(--MainColor);
+                                color: $SecondColor;
+                            }
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .The_Client_Description{
+                position: relative;
+                overflow: hidden;
+                .Container {
+                   form {
+                    display: grid;
+                    grid-template-columns:repeat(auto-fill , minmax(1fr));
+                    gap: 20px;
+                    input {
+                        width: 50%;
+                        margin: 2% 25%;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: $SmallFontSize;
+                        box-shadow: 5px 5px 5px $ShadowColor;
+                        transition: $Transtion;
+
+                   }
+                   span {
+                        font-size: $MeduimFontSize;
+                        color: $SecondColor;
+                        padding: 20px;
+                        p {
+                            color: var(--MainColor);
+                        }
+                   }
+                   button{
+                        width: 10%;
+                        margin: 2% 45%;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: $MeduimFontSize;
+                        box-shadow: 5px 5px 5px $ShadowColor;
+                        transition: $Transtion;
+                        &:hover {
+                            background-color:var(--MainColor) ;
+                            color: $ThirdColor !important;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            transition: $Transtion;
+                            &:hover {
+                                color: $ThirdColor !important;
+                            }
+                        }
+                   }
+                }
+            }
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .The_Types{
+                position: relative;
+                overflow: hidden;
+                .Container{
+                    display: grid;
+                    grid-template-columns:repeat(auto-fill , minmax(350px , 1fr));
+                    gap: 20px;
+                    .Type{
+                        padding: 20px;
+                        h2 {
+                            font-size: $MeduimFontSize;
+                            color:var(--MainColor);
+                        }
+                        > div {
+                            //display: none;
+                            display: grid;
+                            grid-template-rows:repeat(auto-fill,auto);
+                            gap: 20px;
+                            button {
+                                width: 40%;
+                                margin: 2% 30%;
+                                padding: 10px 20px;
+                                border-radius: 20px;
+                                border: none;
+                                font-size: $SmallFontSize;
+                                box-shadow: 5px 5px 5px $ShadowColor;
+                                transition: $Transtion;
+                                &:hover {
+                                    background-color:var(--MainColor) ;
+                                    color: $ThirdColor;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    transition: $Transtion;
+                                    &:hover {
+                                        color: $ThirdColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .Info {
+                position: relative;
+                overflow: hidden;
+                .Container{
+                    display: grid;
+                    grid-template-rows: repeat(auto-fill , auto);
+                    gap: 20px;
+                    .Inputs {
+                        form {
+                            padding: 30px;
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+                            gap: 20px;
+                            span {
+                                label {
+                                    font-size: $MeduimFontSize;
+                                    color: $SecondColor;
+                                }
+                                input {
+                                    padding: 10px 20px;
+                                    border-radius: 20px;
+                                    border: none;
+                                    font-size: $SmallFontSize;
+                                    box-shadow: 5px 5px 5px $ShadowColor;
+                                    transition: $Transtion;
+                                    margin: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .Outputs {
+                        padding: 30px;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+                        gap: 20px;
+                        >div {
+                            h1 {
+                                font-size:$LargeFontSize;
+                                color: var(--MainColor);
+                            }
+                            >div {
+                                padding: 20px;
+                                box-shadow: 5px 5px 5px $ShadowColor;
+                                border-radius:10px ;
+                                margin: 30px;
+                                background-color: var(--MainColor);
+                                h2{
+                                    color: $SecondColor;
+                                }
+                                span {
+                                    color: $ThirdColor;
+                                    font-size:$MeduimFontSize;
+                                }
+                            }
+                        }
+                    }
+                    .Printing {
+                        button {
+                            padding: 10px 20px;
+                            border-radius: 20px;
+                            border: none;
+                            font-size: $SmallFontSize;
+                            box-shadow: 5px 5px 5px $ShadowColor;
+                            transition: $Transtion;
+                            margin: 50px;
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                transition: $Transtion;
+                                &:hover {
+                                    background-color:var(--MainColor) ;
+                                    color: $ThirdColor !important;
+                                }
+                            }
+                            &:hover {
+                                background-color:var(--MainColor) ;
+                                color: $ThirdColor !important;
+                            }
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .The_Worker_Report {
+                position: relative;
+                overflow: hidden;
+                .Container {
+                    display: grid;
+                    grid-template-rows: repeat(auto-fill , auto);
+                    gap: 20px;
+                    > div {
+                        &:first-of-type{
+                            padding: 10px;
+                            background-color: $ThirdColor;
+                            img {
+                                float: left;
+                                margin:auto 21%; 
+                                width: 8%;
+                                height: 100%;
+                                border-radius: 100%;
+                            }
+                            > h1 {
+                                float: left;
+                                width: 50%; 
+                                color: var(--MainColor);
+                            }
+                        }
+                    }
+                    .Outputs {
+                        padding: 30px;
+                        display: grid;
+                        grid-template-rows: repeat(auto-fill , 1fr);
+                        gap: 20px;
+                        h1 {
+                            font-size:$LargeFontSize;
+                            color: var(--MainColor);
+                            text-align: center;
+                        }
+                        >div {
+                            padding: 30px;
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+                            gap: 20px;
+                            >div {
+                                padding: 20px;
+                                box-shadow: 5px 5px 5px $ShadowColor;
+                                border-radius:10px ;
+                                margin: 30px;
+                                background-color: var(--MainColor);
+                                h2{
+                                    color: $SecondColor;
+                                }
+                                span {
+                                    color: $ThirdColor;
+                                    font-size:$MeduimFontSize;
+                                }
+                            }
+                        }
+                    }
+                    .Copy {
+                        background-color: var(--MainColor);
+                        direction: ltr;
+                        padding: 10px;
+                        p , span {
+                            font-size: $SmallFontSize;
+                            display: inline;
+                            padding: 1px ;
+                        }
+                        p {
+                            color: $ThirdColor;
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            .The_Client_Report {
+                position: relative;
+                overflow: hidden;
+                .Container {
+                    display: grid;
+                    grid-template-rows: repeat(auto-fill , auto);
+                    gap: 20px;
+
+                    > div {
+                        &:first-of-type{
+                            padding: 10px;
+                            background-color: $ThirdColor;
+                            img {
+                                float: left;
+                                margin:auto 21%; 
+                                width: 8%;
+                                height: 100%;
+                                border-radius: 100%;
+                            }
+                            > h1 {
+                                float: left;
+                                width: 50%; 
+                                color: var(--MainColor);
+                            }
+                        }
+                        
+                        &:nth-last-of-type(2){
+                            display: grid;
+                            grid-template-rows: repeat(auto-fill , 1fr);
+                            gap: 20px;
+                            > div {
+                                &:first-of-type {
+                                    padding: 20px;
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+                                    gap: 20px;
+                                    h2 {
+                                        color: $SecondColor;
+                                        span {
+                                            color: $ThirdColor !important;
+                                        }
+                                    }
+                                }
+                                &:last-of-type{
+                                    .The_Details{
+                                        h1 {
+                                            color: $SecondColor;
+                                        }
+                                        .The_HeadX{
+                                            padding: 20px;
+                                            display: grid;
+                                            grid-template-columns:repeat(auto-fill ,minmax(120px , auto));
+                                            gap: 20px;
+                                            text-align: center;
+                                            align-items: center;
+                                            background-color:var(--MainColor);
+                                            span {
+                                                font-size: $SmallFontSize;
+                                                color: $ThirdColor;
+                                            }
+                                        }
+                                        .The_Detail{
+                                            padding: 20px;
+                                            display: grid;
+                                            grid-template-columns:repeat(auto-fill ,minmax(120px , auto));
+                                            gap: 20px;
+                                            text-align: center;
+                                            align-items: center;
+                                            background-color:$SecondColor;
+                                            span {
+                                                font-size: $SmallFontSize;
+                                                color: $ThirdColor;
+                                                a {
+                                                    color: $ThirdColor;
+                                                    text-decoration: none;
+                                                    transition: $Transtion;
+                                                    &:hover {
+                                                        color:var(--MainColor);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .Copy {
+                        background-color: var(--MainColor);
+                        direction: ltr;
+                        padding: 10px;
+                        p , span {
+                            font-size: $SmallFontSize;
+                            display: inline;
+                            padding: 1px ;
+                        }
+                        p {
+                            color: $ThirdColor;
+                        }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+            ////////////////////////////////////////////////
+        }
+    }   
+}

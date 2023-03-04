@@ -1,0 +1,18 @@
+include Links.pug
+
+article
+    include Header.pug
+    section(class="The_Client_Description")
+        div(class="Container")
+            form
+                span الرقم التعريفي :
+                    p(class="Client_ID") 2020111
+                span تاريخ التعاقد:
+                    p(class="Client_ID") 22/2/2020
+                input(type="text" placeholder="اسم العميل" class="Name")
+                input(type="tel" placeholder="رقم الهاتف" class="tel")
+                input(type="text" placeholder="عنوان العميل " class="Address")
+                button(class="Add") 
+                    a(href="Sizes.html") اضافة
+
+    include Footer.pug

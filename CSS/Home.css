@@ -1,0 +1,1417 @@
+:root {
+  --MainColor:  #0E3B43;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 12% 79%;
+      grid-template-columns: 5% 12% 79%;
+  gap: 2%;
+  padding: 0 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #357266;
+}
+
+header h1 {
+  color: var(--MainColor);
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+header ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[7];
+      grid-template-columns: repeat(7, auto);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+header ul li a {
+  color: #A3BBAD;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: var(--MainColor);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.Show {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  text-align: center;
+}
+
+html body article .Home {
+  position: relative;
+  background-image: url("../Images/Back_1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+html body article .Home .Open {
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
+}
+
+html body article .Home #Control_Board {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: var(--MainColor);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  gap: 10px;
+}
+
+html body article .Home #Control_Board #BackGround-Colors div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[auto-fill];
+      grid-template-columns: repeat(auto-fill, auto);
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body article .Home #Control_Board #BackGround-Colors div span {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  padding: 0;
+}
+
+html body article .Home #Control_Board #Open-Board div {
+  margin-right: 100%;
+}
+
+html body article .Home #Control_Board #Open-Board div div {
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: var(--MainColor);
+  margin-right: 50%;
+}
+
+html body article .Home #Control_Board > div h1 {
+  color: #357266;
+}
+
+html body article .Home #Control_Board > div div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[auto-fill];
+      grid-template-columns: repeat(auto-fill, auto);
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body article .Home #Control_Board > div div span {
+  padding: 5px;
+  font-size: 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Home #Control_Board > div div span:hover {
+  color: #357266;
+}
+
+html body article .Home #Control_Board > div div input {
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+}
+
+html body article .Home #Control_Board > div div button {
+  padding: 5px 20px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #357266;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Home #Control_Board > div div button:hover {
+  background-color: #357266;
+  color: #A3BBAD;
+}
+
+html body article .Home .Container {
+  height: 100vh;
+  width: 100%;
+}
+
+html body article .Home .Container div {
+  margin-top: 20%;
+}
+
+html body article .Home .Container div h1 {
+  font-size: 40px;
+  color: black;
+}
+
+html body article .Home .Container div h1 span {
+  color: var(--MainColor);
+}
+
+html body article .Home .Container div p {
+  font-size: 30px;
+}
+
+html body article .Services {
+  margin-top: 250px;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+html body article .Services > h1 {
+  font-size: 45px;
+  padding: 10px 20px;
+  border: 3px solid #357266;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  color: var(--MainColor);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Services > h1:hover {
+  background-color: #357266;
+  border: 3px solid #357266;
+}
+
+html body article .Services .Container {
+  width: 96%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body article .Services .Container div {
+  padding: 20px;
+  text-align: center;
+}
+
+html body article .Services .Container div i {
+  background-color: var(--MainColor);
+  padding: 15px;
+  border-radius: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: #A3BBAD;
+}
+
+html body article .Services .Container div i:hover {
+  background-color: #A3BBAD;
+  color: var(--MainColor);
+}
+
+html body article .Services .Container div h1 {
+  font-size: 30px;
+  color: var(--MainColor);
+}
+
+html body article .Services .Container div p {
+  font-size: 20px;
+  color: #357266;
+}
+
+html body article .Start_Working {
+  margin-top: 250px;
+  position: relative;
+  background-color: var(--MainColor);
+  padding: 20px;
+  overflow: hidden;
+}
+
+html body article .Start_Working > h1 {
+  font-size: 45px;
+  padding: 10px 20px;
+  border: 3px solid #357266;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  color: #A3BBAD;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Start_Working > h1:hover {
+  background-color: #357266;
+  border: 3px solid #A3BBAD;
+}
+
+html body article .Start_Working .Container {
+  width: 96%;
+  text-align: center;
+}
+
+html body article .Start_Working .Container form {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body article .Start_Working .Container form input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+}
+
+html body article .Start_Working .Container a {
+  padding: 5px;
+  display: block;
+  font-size: 20px;
+  color: #A3BBAD;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Start_Working .Container a:hover {
+  color: #357266;
+}
+
+html body article .Lists {
+  margin-top: 250px;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+html body article .Lists > h1 {
+  font-size: 45px;
+  padding: 10px 20px;
+  border: 3px solid #357266;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  color: var(--MainColor) r;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Lists > h1:hover {
+  background-color: #357266;
+  border: 3px solid #357266;
+}
+
+html body article .Lists .Container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+html body article .Lists .Container div {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Lists .Container div img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Lists .Container div span {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  right: -17%;
+  background-color: #357266;
+  padding: 10px 50px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  font-size: 30px;
+  color: #A3BBAD;
+}
+
+html body article .Lists .Container div:hover img {
+  -webkit-transform: scale(1.4, 1.4) rotateZ(15deg);
+          transform: scale(1.4, 1.4) rotateZ(15deg);
+}
+
+html body article .Lists .Container div:hover span {
+  background-color: var(--MainColor);
+}
+
+html body article .AboutUs {
+  margin-top: 250px;
+  position: relative;
+  background-color: var(--MainColor);
+  padding: 20px;
+  overflow: hidden;
+}
+
+html body article .AboutUs > h1 {
+  font-size: 45px;
+  padding: 10px 20px;
+  border: 3px solid #357266;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  color: #A3BBAD;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .AboutUs > h1:hover {
+  background-color: #357266;
+  border: 3px solid #357266;
+}
+
+html body article .AboutUs .Container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+html body article .AboutUs .Container > div {
+  position: relative;
+}
+
+html body article .AboutUs .Container > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #357266;
+}
+
+html body article .AboutUs .Container > div > div {
+  text-align: right !important;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  border-radius: 20px;
+  width: 80%;
+  margin-right: 5%;
+  margin-top: 30px;
+  position: relative;
+}
+
+html body article .AboutUs .Container > div > div > span {
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #357266;
+  border-radius: 10px;
+  color: var(--MainColor);
+}
+
+html body article .AboutUs .Container > div > div > p {
+  font-size: 30px;
+  color: #A3BBAD;
+}
+
+html body article .AboutUs .Container > div > div::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 10px;
+  background-color: #357266;
+  top: 50%;
+  right: -5%;
+}
+
+html body article .Testimoniles {
+  margin-top: 250px;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+html body article .Testimoniles > h1 {
+  font-size: 45px;
+  padding: 10px 20px;
+  border: 3px solid #357266;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  color: var(--MainColor);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Testimoniles > h1:hover {
+  background-color: #357266;
+  border: 3px solid #A3BBAD;
+}
+
+html body article .Testimoniles .Container {
+  padding: 20px;
+}
+
+html body article .Testimoniles .Container div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+html body article .Testimoniles .Container div div {
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+}
+
+html body article .Testimoniles .Container div div h2 {
+  font-size: 20px;
+  color: var(--MainColor);
+}
+
+html body article .Testimoniles .Container div div q {
+  font-size: 20px;
+  color: #357266;
+}
+
+html body article .Testimoniles .Container form {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body article .Testimoniles .Container form label {
+  font-size: 30px;
+  color: #A3BBAD;
+}
+
+html body article .Testimoniles .Container form input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Testimoniles .Container form textarea {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+}
+
+html body article .Testimoniles .Container form input:last-of-type:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD;
+}
+
+html body article .Statistics {
+  position: relative;
+  background-color: var(--MainColor);
+  padding: 20px;
+  overflow: hidden;
+}
+
+html body article .Statistics .Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+html body article .Statistics .Container div {
+  padding: 20px;
+}
+
+html body article .Statistics .Container div i {
+  padding: 15px;
+  border-radius: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background-color: #A3BBAD;
+  color: #357266;
+}
+
+html body article .Statistics .Container div i:hover {
+  background-color: #357266;
+  color: #A3BBAD;
+}
+
+html body article .Statistics .Container div h1 {
+  font-size: 30px;
+  color: #357266;
+}
+
+html body article .Statistics .Container div p {
+  font-size: 30px;
+  color: #357266;
+}
+
+html body article .Statistics .Container div a {
+  padding: 5px;
+  display: block;
+  font-size: 20px;
+  color: #A3BBAD;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Statistics .Container div a:hover {
+  color: #357266;
+}
+
+html body article .ContactUs {
+  margin-top: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .ContactUs > h1 {
+  font-size: 45px;
+  padding: 10px 20px;
+  border: 3px solid #357266;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  color: var(--MainColor);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .ContactUs > h1:hover {
+  background-color: #357266;
+  border: 3px solid #A3BBAD;
+}
+
+html body article .ContactUs .Container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+html body article .ContactUs .Container div img {
+  width: 100%;
+  height: 100%;
+}
+
+html body article .ContactUs .Container div form {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body article .ContactUs .Container div form label {
+  font-size: 30px;
+  color: #357266;
+}
+
+html body article .ContactUs .Container div form input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .ContactUs .Container div form textarea {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+}
+
+html body article .ContactUs .Container div form input:last-of-type:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD;
+}
+
+html body article footer {
+  background-color: var(--MainColor);
+  overflow: hidden;
+}
+
+html body article footer .Container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  gap: 20px;
+}
+
+html body article footer .Container div:first-of-type {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+html body article footer .Container div:first-of-type div {
+  padding: 20px;
+}
+
+html body article footer .Container div:first-of-type div h1 {
+  font-size: 40px;
+  color: #357266;
+}
+
+html body article footer .Container div:first-of-type div img {
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 100%;
+}
+
+html body article footer .Container div:first-of-type div h2 {
+  font-size: 30px;
+  color: #357266;
+}
+
+html body article footer .Container div:first-of-type div ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  gap: 20px;
+}
+
+html body article footer .Container div:first-of-type div ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1.4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: #A3BBAD;
+}
+
+html body article footer .Container div:first-of-type div ul li a:hover {
+  color: #357266;
+}
+
+html body article footer .Container div:last-of-type {
+  direction: ltr;
+}
+
+html body article footer .Container div:last-of-type p, html body article footer .Container div:last-of-type span {
+  font-size: 20px;
+  display: inline;
+  padding: 1px;
+}
+
+html body article footer .Container div:last-of-type p {
+  color: #A3BBAD;
+}
+
+html body article .The_List {
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .The_List .Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+html body article .The_List .Container .The_Head {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--MainColor);
+}
+
+html body article .The_List .Container .The_Head span {
+  font-size: 20px;
+  color: #A3BBAD;
+}
+
+html body article .The_List .Container .The_Client {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #357266;
+}
+
+html body article .The_List .Container .The_Client span {
+  font-size: 20px;
+  color: #A3BBAD;
+}
+
+html body article .The_List .Container .The_Client span a {
+  color: #A3BBAD;
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_List .Container .The_Client span a:hover {
+  color: var(--MainColor);
+}
+
+html body article .The_List .Container .The_Client button {
+  padding: 10px 20px;
+  border-radius: 110px;
+  border: none;
+  font-size: 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_List .Container .The_Client button:hover {
+  background-color: #357266;
+  color: #A3BBAD;
+}
+
+html body article .The_List .Container .The_Details .The_HeadX {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--MainColor);
+}
+
+html body article .The_List .Container .The_Details .The_HeadX span {
+  font-size: 20px;
+  color: #A3BBAD;
+}
+
+html body article .The_List .Container .The_Details .The_Detail {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #357266;
+}
+
+html body article .The_List .Container .The_Details .The_Detail span {
+  font-size: 20px;
+  color: #A3BBAD;
+}
+
+html body article .The_List .Container .The_Details .The_Detail span a {
+  color: #A3BBAD;
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_List .Container .The_Details .The_Detail span a:hover {
+  color: var(--MainColor);
+}
+
+html body article .The_List .Container .The_Details .Add_Size {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: var(--MainColor);
+}
+
+html body article .The_List .Container .The_Details .Add_Size button {
+  padding: 10px 20px;
+  border-radius: 110px;
+  border: none;
+  font-size: 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_List .Container .The_Details .Add_Size button:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD;
+}
+
+html body article .The_List .Add_Client {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #A3BBAD;
+}
+
+html body article .The_List .Add_Client a button {
+  padding: 10px 20px;
+  border-radius: 110px;
+  border: none;
+  font-size: 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_List .Add_Client a button:hover {
+  background-color: var(--MainColor);
+  color: #357266;
+}
+
+html body article .The_Client_Description {
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .The_Client_Description .Container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(1fr));
+  gap: 20px;
+}
+
+html body article .The_Client_Description .Container form input {
+  width: 50%;
+  margin: 2% 25%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_Client_Description .Container form span {
+  font-size: 30px;
+  color: #357266;
+  padding: 20px;
+}
+
+html body article .The_Client_Description .Container form span p {
+  color: var(--MainColor);
+}
+
+html body article .The_Client_Description .Container form button {
+  width: 10%;
+  margin: 2% 45%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_Client_Description .Container form button:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD !important;
+}
+
+html body article .The_Client_Description .Container form button a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_Client_Description .Container form button a:hover {
+  color: #A3BBAD !important;
+}
+
+html body article .The_Types {
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .The_Types .Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+html body article .The_Types .Container .Type {
+  padding: 20px;
+}
+
+html body article .The_Types .Container .Type h2 {
+  font-size: 30px;
+  color: var(--MainColor);
+}
+
+html body article .The_Types .Container .Type > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  gap: 20px;
+}
+
+html body article .The_Types .Container .Type > div button {
+  width: 40%;
+  margin: 2% 30%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_Types .Container .Type > div button:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD;
+}
+
+html body article .The_Types .Container .Type > div button a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_Types .Container .Type > div button a:hover {
+  color: #A3BBAD;
+}
+
+html body article .Info {
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .Info .Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  gap: 20px;
+}
+
+html body article .Info .Container .Inputs form {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+html body article .Info .Container .Inputs form span label {
+  font-size: 30px;
+  color: #357266;
+}
+
+html body article .Info .Container .Inputs form span input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  margin: 10px;
+}
+
+html body article .Info .Container .Outputs {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+html body article .Info .Container .Outputs > div h1 {
+  font-size: 40px;
+  color: var(--MainColor);
+}
+
+html body article .Info .Container .Outputs > div > div {
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: var(--MainColor);
+}
+
+html body article .Info .Container .Outputs > div > div h2 {
+  color: #357266;
+}
+
+html body article .Info .Container .Outputs > div > div span {
+  color: #A3BBAD;
+  font-size: 30px;
+}
+
+html body article .Info .Container .Printing button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  margin: 50px;
+}
+
+html body article .Info .Container .Printing button a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .Info .Container .Printing button a:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD !important;
+}
+
+html body article .Info .Container .Printing button:hover {
+  background-color: var(--MainColor);
+  color: #A3BBAD !important;
+}
+
+html body article .The_Worker_Report {
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .The_Worker_Report .Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  gap: 20px;
+}
+
+html body article .The_Worker_Report .Container > div:first-of-type {
+  padding: 10px;
+  background-color: #A3BBAD;
+}
+
+html body article .The_Worker_Report .Container > div:first-of-type img {
+  float: left;
+  margin: auto 21%;
+  width: 8%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+html body article .The_Worker_Report .Container > div:first-of-type > h1 {
+  float: left;
+  width: 50%;
+  color: var(--MainColor);
+}
+
+html body article .The_Worker_Report .Container .Outputs {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 20px;
+}
+
+html body article .The_Worker_Report .Container .Outputs h1 {
+  font-size: 40px;
+  color: var(--MainColor);
+  text-align: center;
+}
+
+html body article .The_Worker_Report .Container .Outputs > div {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+html body article .The_Worker_Report .Container .Outputs > div > div {
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px #e4e4e4;
+          box-shadow: 5px 5px 5px #e4e4e4;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: var(--MainColor);
+}
+
+html body article .The_Worker_Report .Container .Outputs > div > div h2 {
+  color: #357266;
+}
+
+html body article .The_Worker_Report .Container .Outputs > div > div span {
+  color: #A3BBAD;
+  font-size: 30px;
+}
+
+html body article .The_Worker_Report .Container .Copy {
+  background-color: var(--MainColor);
+  direction: ltr;
+  padding: 10px;
+}
+
+html body article .The_Worker_Report .Container .Copy p, html body article .The_Worker_Report .Container .Copy span {
+  font-size: 20px;
+  display: inline;
+  padding: 1px;
+}
+
+html body article .The_Worker_Report .Container .Copy p {
+  color: #A3BBAD;
+}
+
+html body article .The_Client_Report {
+  position: relative;
+  overflow: hidden;
+}
+
+html body article .The_Client_Report .Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  gap: 20px;
+}
+
+html body article .The_Client_Report .Container > div:first-of-type {
+  padding: 10px;
+  background-color: #A3BBAD;
+}
+
+html body article .The_Client_Report .Container > div:first-of-type img {
+  float: left;
+  margin: auto 21%;
+  width: 8%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+html body article .The_Client_Report .Container > div:first-of-type > h1 {
+  float: left;
+  width: 50%;
+  color: var(--MainColor);
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 20px;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:first-of-type {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:first-of-type h2 {
+  color: #357266;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:first-of-type h2 span {
+  color: #A3BBAD !important;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details h1 {
+  color: #357266;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details .The_HeadX {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(120px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--MainColor);
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details .The_HeadX span {
+  font-size: 20px;
+  color: #A3BBAD;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details .The_Detail {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(120px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #357266;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details .The_Detail span {
+  font-size: 20px;
+  color: #A3BBAD;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details .The_Detail span a {
+  color: #A3BBAD;
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+html body article .The_Client_Report .Container > div:nth-last-of-type(2) > div:last-of-type .The_Details .The_Detail span a:hover {
+  color: var(--MainColor);
+}
+
+html body article .The_Client_Report .Container .Copy {
+  background-color: var(--MainColor);
+  direction: ltr;
+  padding: 10px;
+}
+
+html body article .The_Client_Report .Container .Copy p, html body article .The_Client_Report .Container .Copy span {
+  font-size: 20px;
+  display: inline;
+  padding: 1px;
+}
+
+html body article .The_Client_Report .Container .Copy p {
+  color: #A3BBAD;
+}
+/*# sourceMappingURL=Home.css.map */
